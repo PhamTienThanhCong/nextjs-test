@@ -22,13 +22,13 @@ const NavBar = () => {
               <Link className="nav-link" href="/">Trang Chủ</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/about/service">Dịch vụ</Link>
+              <Link className="nav-link" href="/service">Dịch vụ</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" href="/about">Về chúng tôi</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/about/contact">Liên hệ</Link>
+              <Link className="nav-link" href="/contact">Liên hệ</Link>
             </li>
           </ul>
         </div>

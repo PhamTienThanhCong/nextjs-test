@@ -8,6 +8,7 @@ export default function Home() {
       <NavBar />
       <Header />
 
+
       <div className="container mt-5 h-100">
         <div className="row">
           <div className="col-md-8">

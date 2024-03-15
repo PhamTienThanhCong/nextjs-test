@@ -1,0 +1,1 @@
+export const MAIN_URL_APP = process.env.MAIN_URL_APP || "localhost:3000";

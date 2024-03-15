@@ -1,6 +1,24 @@
+import { MAIN_URL_APP } from "@/constants/app";
 import Footer from "@/layouts/Footer";
 import Header from "@/layouts/Header";
 import NavBar from "@/layouts/NarBar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Liên hệ với chúng tôi',
+  description: 'Đây là trang liên hệ với chúng tôi để gửi thông tin, yêu cầu hỗ trợ, góp ý, phản hồi về sản phẩm, dịch vụ của chúng tôi',
+  applicationName: 'About us',
+  keywords: ['Liên hệ', 'Contact', 'Gửi thông tin', 'Yêu cầu hỗ trợ', 'Góp ý', 'Phản hồi', 'Sản phẩm', 'Dịch vụ'],
+  generator: 'NextJS',
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Liên hệ với chúng tôi',
+    description: 'Đây là trang liên hệ với chúng tôi để gửi thông tin, yêu cầu hỗ trợ, góp ý, phản hồi về sản phẩm, dịch vụ của chúng tôi.',
+    images: ["https://avatars.githubusercontent.com/u/77420469?v=4"],
+    type: 'website',
+    url: MAIN_URL_APP + '/contact',
+  },
+}
 
 export default function Contact() {
   return (

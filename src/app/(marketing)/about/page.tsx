@@ -1,6 +1,25 @@
+import type { Metadata } from 'next'
 import Footer from "@/layouts/Footer";
 import Header from "@/layouts/Header";
 import NavBar from "@/layouts/NarBar";
+import { MAIN_URL_APP } from '@/constants/app';
+
+export const metadata: Metadata = {
+  title: 'About us',
+  description: 'Đây là trang giới thiệu về chúng tôi.',
+  applicationName: 'About us',
+  keywords: ['giới thiệu về công', "giới thiệu về chúng tôi", 'about us', 'about', 'us', 'về chúng tôi', 'về chúng tôi'],
+  generator: 'NextJS',
+  robots: 'index, follow',
+  openGraph: {
+    title: 'About us',
+    description: 'Đây là trang giới thiệu về chúng tôi.',
+    images: ["https://avatars.githubusercontent.com/u/77420469?v=4"],
+    type: 'website',
+    url: MAIN_URL_APP + '/about',
+  },
+}
+ 
 
 export default function About() {
   return (
